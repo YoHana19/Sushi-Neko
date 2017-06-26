@@ -30,7 +30,8 @@
 		20E455C61F017640004F8999 /* sfx_swipe.caf in Resources */ = {isa = PBXBuildFile; fileRef = 20E455C51F017640004F8999 /* sfx_swipe.caf */; };
 		20FD487F1F017C6A00647A9D /* SushiPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD487E1F017C6A00647A9D /* SushiPiece.swift */; };
 		20FD48811F01801B00647A9D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD48801F01801B00647A9D /* Character.swift */; };
-		20FD48831F01880600647A9D /* AnimationActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 20FD48821F01880600647A9D /* AnimationActions.sks */; };
+		20FD48851F01A2FC00647A9D /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FD48841F01A2FC00647A9D /* MSButtonNode.swift */; };
+		20FD48871F01A36C00647A9D /* AnimationActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 20FD48861F01A36C00647A9D /* AnimationActions.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +60,8 @@
 		20E455C51F017640004F8999 /* sfx_swipe.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_swipe.caf; sourceTree = "<group>"; };
 		20FD487E1F017C6A00647A9D /* SushiPiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiPiece.swift; sourceTree = "<group>"; };
 		20FD48801F01801B00647A9D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		20FD48821F01880600647A9D /* AnimationActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = AnimationActions.sks; path = ../AnimationActions.sks; sourceTree = "<group>"; };
+		20FD48841F01A2FC00647A9D /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		20FD48861F01A36C00647A9D /* AnimationActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AnimationActions.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,15 +94,16 @@
 		20E455921F0175DF004F8999 /* SushiNeko */ = {
 			isa = PBXGroup;
 			children = (
+				20E455971F0175DF004F8999 /* Actions.sks */,
+				20FD48861F01A36C00647A9D /* AnimationActions.sks */,
 				20E455931F0175DF004F8999 /* AppDelegate.swift */,
-				20FD48821F01880600647A9D /* AnimationActions.sks */,
 				20E455951F0175DF004F8999 /* GameScene.sks */,
 				20FD48801F01801B00647A9D /* Character.swift */,
-				20E455971F0175DF004F8999 /* Actions.sks */,
 				20E455991F0175DF004F8999 /* GameScene.swift */,
 				20FD487E1F017C6A00647A9D /* SushiPiece.swift */,
 				20E4559B1F0175DF004F8999 /* GameViewController.swift */,
 				20E4559D1F0175DF004F8999 /* Main.storyboard */,
+				20FD48841F01A2FC00647A9D /* MSButtonNode.swift */,
 				20E455A01F0175DF004F8999 /* Assets.xcassets */,
 				20E455A21F0175DF004F8999 /* LaunchScreen.storyboard */,
 				20E455A51F0175DF004F8999 /* Info.plist */,
@@ -216,7 +219,7 @@
 				20E455C11F01761D004F8999 /* roll@2x.png in Resources */,
 				20E455B91F01761D004F8999 /* button@2x.png in Resources */,
 				20E455981F0175DF004F8999 /* Actions.sks in Resources */,
-				20FD48831F01880600647A9D /* AnimationActions.sks in Resources */,
+				20FD48871F01A36C00647A9D /* AnimationActions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +233,7 @@
 				20E4559A1F0175DF004F8999 /* GameScene.swift in Sources */,
 				20FD487F1F017C6A00647A9D /* SushiPiece.swift in Sources */,
 				20FD48811F01801B00647A9D /* Character.swift in Sources */,
+				20FD48851F01A2FC00647A9D /* MSButtonNode.swift in Sources */,
 				20E4559C1F0175DF004F8999 /* GameViewController.swift in Sources */,
 				20E455941F0175DF004F8999 /* AppDelegate.swift in Sources */,
 			);
