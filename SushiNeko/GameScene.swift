@@ -41,6 +41,39 @@ class GameScene: SKScene {
         addRandomPieces(total: 10)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        /* Called when a touch begins */
+        
+        /* We only need a single touch here */
+        let touch = touches.first!
+        
+        /* Get touch position in scene */
+        let location = touch.location(in: self)
+        
+        /* Was touch on left/right hand side of screen? */
+        if location.x > size.width / 2 {
+            character.side = .right
+        } else {
+            character.side = .left
+        }
+        
+        /* Grab sushi piece on top of the base sushi piece, it will always be 'first' */
+        if let firstPiece = sushiTower.first {
+            /* Remove from sushi tower array */
+            sushiTower.removeFirst()
+            
+            /* Animate the punched sushi piece */
+            firstPiece.flip(character.side)
+            
+            /* Add a new sushi piece to the top of the sushi tower */
+            addRandomPieces(total: 1)
+        }
+    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        moveTowerDown()
+    }
+    
     func addTowerPiece(side: Side) {
         /* Add a new sushi piece to the sushi tower */
         
@@ -97,6 +130,15 @@ class GameScene: SKScene {
                     addTowerPiece(side: .none)
                 }
             }
+        }
+    }
+    
+    func moveTowerDown() {
+        var n: CGFloat = 0
+        for piece in sushiTower {
+            let y = (n * 55) + 215
+            piece.position.y -= (piece.position.y - y) * 0.5
+            n += 1
         }
     }
 }
